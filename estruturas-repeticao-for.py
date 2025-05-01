@@ -1,6 +1,7 @@
 texto = input("Informe uma palavra: ")
 VOGAIS = "AEIOU"
 
+#Exemplo usando um iterável:
 for letra in texto: 
     if letra.upper() in VOGAIS: 
         print(letra, end=" ") 
