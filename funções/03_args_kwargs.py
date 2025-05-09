@@ -25,7 +25,7 @@ print(resultado)
 #kwargs
 
 #Nste exercício temos um exemplo para entender o método .items()
-dicionario = {"nome": "João", "idade": 30, "cidade": "Lisboa"}
+dicionario = {"nome": "João", "idade": 30, "cidade": "Lisboa"} #formatação para montar um dicionário
 
 for chave, valor in dicionario.items():
     print(f"Chave: {chave}, Valor: {valor}")
@@ -37,7 +37,7 @@ def mostrar_informacoes(**kwargs):
     for chave, valor in kwargs.items():
         print(f"{chave}: {valor}")
 
-mostrar_informacoes(nome="Ana", idade=25, cidade="Fortaleza")
+mostrar_informacoes(nome="Ana", idade=25, cidade="Fortaleza") #formatação para chave=valor
 
 #Inventei esse exercício para entender melhor:
 def menu(**cardapio):
