@@ -40,3 +40,31 @@ for carro in carros:
     print (carro)
 for indice, carro in enumerate(carros):
     print(f"{indice}: {carro}")
+print(' ')
+
+#Compreensão de Listas
+#Filtro - versão extensa:
+numeros = [1, 30, 21, 2, 9, 65, 34]
+pares = []
+for x in numeros:
+    if x % 2 == 0:
+        pares.append(x)
+print(pares)
+
+#Filtro - versão compacta:
+numeros = [1, 30, 21, 2, 9, 65, 34]
+pares = [x for x in numeros if x % 2 == 0]
+print (pares)
+print(" ")
+
+# Modificando valores - versão extensa:
+numeros = [1, 30, 21, 2, 9, 65, 34]
+quadrado = []
+for y in numeros:
+    quadrado.append(y ** 2)
+print (quadrado)
+
+# Modificando valores - versão compacta:
+numeros = [1, 30, 21, 2, 9, 65, 34]
+quadrado = [y ** 2 for y in numeros]
+print (quadrado)
